@@ -1,4 +1,36 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const titleEntrance = keyframes`
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(initial);
+    opacity: 1;
+  }
+`
+const subtitleEntrance = keyframes`
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: initial;
+  }
+`
+const buttonsEntrance = keyframes`
+  from{
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(initial);
+    opacity: initial;
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +47,7 @@ export const Heading = styled.div`
     font-size: 40px;
     line-height: 48px;
     color: #393c41;
+    animation: ${titleEntrance} 0.7s;
   }
 
   > h2 {
@@ -22,6 +55,7 @@ export const Heading = styled.div`
     font-size: 14px;
     line-height: 20px;
     color: #5c5e62;
+    animation: ${subtitleEntrance} 1s;
   }
 `;
 export const Buttons = styled.div`
@@ -50,7 +84,7 @@ export const Buttons = styled.div`
     min-width: 256px;
     width: 100%;
     cursor: pointer;
-
+    animation: ${buttonsEntrance} 1s;
     &.white {
       background: #fff;
       color: #1a1720;
