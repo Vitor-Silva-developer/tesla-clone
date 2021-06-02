@@ -22,7 +22,7 @@ export const Header = styled.header`
     min-height: 52px;
 `;
 export const Logo = styled.img`
-    height: 17px;
+    height: 12px;
     cursor: pointer;
 `;
 export const Burger = styled(BurgerSVG)`

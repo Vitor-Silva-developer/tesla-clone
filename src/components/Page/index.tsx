@@ -11,22 +11,22 @@ const Page: React.FC = () => {
       <ModelsWrapper>
         <div>
           {[
-            'Model S',
-            'Model Y',
-            'Model 3',
-            'Model X',
-            'Solar Panels',
-            'Solar Roof',
-            'Acessories',
-          ].map(modelName => (
+            {modelName:'Model S', description: "Order Online for Touchless Delivery" },
+            {modelName:'Model Y', description: "Order Online for Touchless Delivery"},
+            {modelName:'Model 3', description: "Order Online for Touchless Delivery"},
+            {modelName:'Model X', description: "Order Online for Touchless Delivery"},
+            {modelName:'Lowest Cost Solar Panels in America', description: "Money-back guarantee"},
+            {modelName:'Solar for New Roofs', description: "Solar Roof Costs Less Than a New Roof Plus Solar Panels"},
+            {modelName:'Acessories', description: ""},
+          ].map(model => (
             <ModelSection
-              key={modelName}
+              key={model.modelName}
               className="colored"
-              modelName={modelName}
+              modelName={model.modelName}
               overlayNode={
                 <DefaultOverlayContent
-                  label={modelName}
-                  description="Order Online for Delivery"
+                  label={model.modelName}
+                  description={model.description}
                 />
               }
             />
