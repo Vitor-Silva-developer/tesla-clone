@@ -71,7 +71,7 @@ export const Buttons = styled.div`
     background: #1a1720;
     color: #fff;
     opacity: 0.8;
-
+    max-width: 256px;
     font-size: 12px;
     font-weight: 500;
 
