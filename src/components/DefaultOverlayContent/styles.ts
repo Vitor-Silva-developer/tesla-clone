@@ -47,7 +47,7 @@ export const Buttons = styled.div`
     border-radius: 20px;
     border: none;
     outline: 0;
-
+    width: 100%;
     cursor: pointer;
 
     &.white {
