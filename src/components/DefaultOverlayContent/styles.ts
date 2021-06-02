@@ -40,7 +40,7 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.div`
-  margin-top: 16.5vh;
+  margin: 16.5vh 10px 0 10px;
   text-align: center;
   > h1 {
     font-weight: 500;
@@ -57,6 +57,7 @@ export const Heading = styled.div`
     color: #5c5e62;
     animation: ${subtitleEntrance} 1s;
   }
+
 `;
 export const Buttons = styled.div`
   display: flex;
